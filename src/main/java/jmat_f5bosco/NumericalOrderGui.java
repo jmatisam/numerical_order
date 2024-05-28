@@ -22,8 +22,8 @@ public class NumericalOrderGui extends JFrame {
     private final DefaultListModel<Integer> numberListModel;
 
     public NumericalOrderGui() {
-        setTitle("Numerical Order Show");
-        setSize(400, 300);
+        setTitle("數字順序顯示---Numerical Order Show");
+        setSize(700, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
@@ -31,10 +31,10 @@ public class NumericalOrderGui extends JFrame {
         JPanel inputPanel = new JPanel();
         inputPanel.setLayout(new FlowLayout());
 
-        JLabel numberLabel = new JLabel("Ingrese un número:");
+        JLabel numberLabel = new JLabel("插入一個數字 / Insert a number:");
         numberInput = new JTextField(10);
-        JButton addButton = new JButton("Añadir");
-        JButton sortButton = new JButton("Ordenar");
+        JButton addButton = new JButton("添加 / Add");
+        JButton sortButton = new JButton("命令 / Order");
 
         inputPanel.add(numberLabel);
         inputPanel.add(numberInput);
@@ -62,7 +62,7 @@ public class NumericalOrderGui extends JFrame {
         try {
             int number = Integer.parseInt(numberInput.getText());
             if (number == 4) {
-                JOptionPane.showMessageDialog(this, "El número 4 es considerado de mala suerte en la cultura china y no puede ser ingresado a la lista.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "數字4在中國文化中被認為是不吉利的，不能進入該列表 / The number 4 is considered unlucky in Chinese culture and cannot be entered into the list.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
             numberListModel.addElement(number);
