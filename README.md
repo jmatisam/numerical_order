@@ -1,5 +1,7 @@
 Java Number Sorting Project
 
+* [Oficial Guide of Proyect](https://www.canva.com/design/DAGGc42QQM0/hEIvHqbnpjlxBvlcHahHAQ/view?utm_content=DAGGc42QQM0&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 Project Context and Objective
 The ability to sort data is an essential skill in programming. For this reason, our development team has set out to design and create a Java program that allows users to sort a list of manually entered numbers. This project aims to provide valuable practice in handling data and implementing basic sorting algorithms such as bubble, selection and insertion algorithms.
 
